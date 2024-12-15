@@ -1,0 +1,14 @@
+sudreg:
+  baseUrl: https://sudreg-data.gov.hr/api/javni
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          sudreg:
+            client-id: 2K8XmJgYVNnHrWuXQHAcKw..
+            client-secret: v0Yv2I1TXg2vxuLfuCktiw..
+            authorization-grant-type: client_credentials
+        provider:
+          sudreg:
+            token-uri: https://sudreg-data.gov.hr/api/oauth/token
